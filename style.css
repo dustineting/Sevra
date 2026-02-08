@@ -1,0 +1,195 @@
+/* ===== Reset and Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #ffecec;
+}
+
+footer {
+    text-align: center;
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #fbdada;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navigation: Left, Center, Right */
+.left-nav, .right-nav {
+    display: flex;
+    gap: 12px;
+    flex: 1 1 0;
+}
+
+.left-nav {
+    justify-content: flex-end;
+}
+
+.right-nav {
+    justify-content: flex-start;
+}
+
+/* Navigation: Button Styles */
+.left-nav a, .right-nav a {
+    font-family: "Kalnia", serif;
+    color: #4a4a4a;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.left-nav a:hover, .right-nav a:hover {
+    background-color: #f8caca;
+    color: #7b4a4a;
+}
+
+/* Navigation: Logo */
+.logo-nav {
+    display: flex;
+    min-width: 180px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-shrink: 0;
+    margin: 0 20px;
+}
+
+.logo-nav span {
+    font-family: "Island Moments", cursive;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.logo-nav img {
+    height: 60px;
+    width: auto;
+    border-radius: 10px;
+}
+
+/* ===== Index Section ===== */
+.welcome-container {
+    padding: 120px 30px 30px 30px;
+    background-color: #ffecec;
+    min-height: 100vh;
+}
+
+.welcome-text {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #7b4a4a;
+}
+
+.welcome-text h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: #7b4a4a;
+    margin-bottom: 10px;
+}
+
+.welcome-text p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17.5px;
+    color: #4a4a4a;
+}
+
+/* Home: Grid Layout */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.time-date, .welcome-pic, .mood-checker {
+    min-height: 260px;
+    background-color: #fbdada;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 8px #202020AA;
+}
+
+/* Home: Time and Date */
+.time-date h1 {
+    font-family: "Kalnia", serif;
+    font-size: 50px;
+    color: #7b4a4a;
+}
+
+.time-date p {
+    font-family: "Kalnia", serif;
+    font-size: 20px;
+    color: #7b4a4a;
+}
+
+.time-date a {
+    text-decoration: none;
+}
+
+/* Home: Welcome Pic */
+.welcome-pic img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Home: Mood Checker */
+.mood-checker {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mood-checker h2 {
+    font-family: "Kalnia", serif;
+    font-size: 40px;
+    color: #7b4a4a;
+    margin-bottom: 20px;
+}
+
+.emoji-labels {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    margin-bottom: 8px;
+    font-size: 2rem;
+}
+
+.emoji-labels span {
+    width: 25%;
+    text-align: center;
+}
+
+input[type="range"] {
+    width: 80%;
+    margin: 0;
+    accent-color: #ff8fb1;
+}
+
+#moodLabel {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.mood-checker button {
+    background-color: #f8caca;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.mood-checker button:hover {
+    background-color: #f5b5b5;
+}
+
+/* ===== Media Responsiveness ===== */

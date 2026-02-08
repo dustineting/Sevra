@@ -1,0 +1,39 @@
+<!--- 
+  Name:     Dayrit, Dhalenzhei Anne c.
+  Section:  WD - 202
+  Date:     19th of September, 2025   |     Saturday
+  Act:      Landing Page (Login)
+--->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sevra | Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="auth-container">
+    <img src="img/logo.jpg" alt="Sevra logo" class="logo" />
+    <h2>Sevra</h2>
+
+    <form id="loginForm" action="home.html" method="get" class="login-form">
+      <input type="email" id="email" name="email" placeholder="Email" required />
+      <input type="password" id="password" name="password" placeholder="Password" required />
+      <label style="display: flex; align-items: center; gap: 5px; font-size: 0.9rem; margin-top: 5px;">
+        <input type="checkbox" id="rememberMe" /> Remember me
+      </label>
+      <button type="submit">Login</button>
+    </form>
+
+    <p class="signup-link">
+      Don’t have an account?
+      <a href="signup.html">Sign up</a>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
