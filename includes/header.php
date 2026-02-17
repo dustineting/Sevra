@@ -8,7 +8,7 @@
 <body>
     <nav>
         <div class="left-nav">
-            <a href="#">Journal</a>
+            <a href="journal.php">Journal</a>
             <a href="#">Psychiatrists</a>
             <a href="#">Archives</a>
         </div>
@@ -19,7 +19,7 @@
         </div>
 
         <div class="right-nav">
-            <a href="#">Dashboard</a>
+            <a href="dashboard.php">Dashboard</a>
             <a href="#">About Us</a>
             <a href="#">Contact Us</a>
         </div>
