@@ -20,8 +20,9 @@ $username = 'User';
     <!-- Navigation Header -->
     <?php include('includes/header.php'); ?>
 
-    <!-- Welcome Section -->
+    <!-- Main Section -->
     <main class="welcome-container">
+        <!-- Welcome Section -->
         <section class="welcome-text">
             <h1>Welcome back to Sevra, <?php echo($username); ?>!</h1>
             <p>
@@ -29,20 +30,20 @@ $username = 'User';
             </p>
         </section>
 
-        <!-- Widgets: Time, Date, and Picture -->
+        <!-- Widgets -->
         <div class="info-grid">
-            <!-- Widget: Daily Affirmation -->
+            <!-- Daily Affirmation -->
             <section class="daily-affirmation">
                 <img src="img/affirmation.png" alt="Daily Affirmation">
             </section>
 
-            <!-- Widget: Time and Date -->
+            <!-- Time and Date -->
             <section class="time-date">
                 <p><?php echo date("l, jS \\of F Y"); ?></p>
                 <h1><?php echo date("h:i A"); ?></h1>
             </section>
         
-            <!-- Widget: Mood Checker -->
+            <!-- Mood Checker -->
             <section class="mood-checker">
                 <h2>How are you feeling today?</h2>
                 <form onsubmit="submitMood(event)">
@@ -60,19 +61,19 @@ $username = 'User';
                 </form>
             </section>
 
-            <!-- Widget: Time Capsule -->
+            <!-- Time Capsule -->
             <section class="time-capsule">
                 <a href="archives.php" class="widget-btn">Do you want to write a Time Capsule?</a>
             </section>
 
-            <!-- Widget: Write Journal -->
+            <!-- Write Journal -->
             <section class="write-journal">
                 <a href="journal.php" class="widget-btn">Start writing today's Journal?</a>
             </section>
         </div>
     </main>
 
-    <!-- Widget: Mood Checker Script -->
+    <!-- Mood Checker Script -->
     <script>
         const moods = [
         "😢 Sad",
@@ -88,7 +89,7 @@ $username = 'User';
         function submitMood(e) {
             e.preventDefault();
             const value = document.getElementById("moodSlider").value;
-            alert("Your mood today: " + moods[value - 1]);
+            alert("Your Mood Today: " + moods[value - 1]);
         }
     </script>
 
