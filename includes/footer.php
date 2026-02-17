@@ -7,7 +7,11 @@
 </head>
 <body>
     <footer>
-      <p>&copy; 2025. All Rights Reserved.</p>
+        <div class="logo-footer">
+            <img src="img/logo.jpg" alt="Sevra logo">
+            <span>Sevra</span>
+        </div>
+        <p>&copy; 2025. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
